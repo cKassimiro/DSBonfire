@@ -68,3 +68,14 @@ body{
     color: #959798;
     font-size: 24pt;
 }
+
+/* ANIMAÇÃO DOS BOTOES */
+@-webkit-keyframes fadeinout {0%,100% { opacity: 0; }100% { opacity: 1; }}
+@keyframes fadeinout {0%,100% { opacity: 0; }100% { opacity: 1; }}
+.animacao:hover{
+    animation: fadeinout 1s linear forwards;
+    -webkit-animation: fadeinout 1s linear forwards;
+    background-color: #6f3c1d0e; 
+    color: #a9927f;
+    border-radius: 20%;
+}
