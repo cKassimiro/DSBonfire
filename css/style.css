@@ -1,0 +1,70 @@
+/* GLOBAL */
+
+/* FONTE */
+@font-face {
+    font-family: trajan-pro-3;
+    src: url("../fonts/trajan-pro-3-2.otf") format("opentype");
+}
+
+@font-face {
+    font-family: trajan-pro-3;
+    font-weight: bolder;
+    src: url("../fonts/trajan-pro-3-2.otf") format("opentype");
+}
+
+/* BACKGROUND */
+body{
+    position: fixed;
+    background-image: url("../images/background_bonfire.jpg");
+    background-repeat: no-repeat;    
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    font-family: trajan-pro-3, serif;
+    font-style: normal;
+    font-weight: 200;
+    z-index: 1;
+}
+.filtro{
+    position: absolute;
+    background-image: url("../images/grid.png");
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.atual{
+    font-weight: bolder;
+}
+
+/* MENU DE NAVEGAÇÃO */
+.background-menu {
+    position: fixed;
+    background-color: #1b191aed;
+    width: 30%;
+    height: 98%;
+    z-index: 3;
+}
+.background-menu.menu{
+    float: left;
+    left: 9%;
+    bottom: 33%;
+    z-index: 4;
+}
+.menu{
+    position: fixed;
+    left: 6.45%;
+    bottom: 28%;
+}
+.menu li{
+    list-style: none;
+    border-bottom: 1px #818181 solid;
+    text-align: center;
+    padding-top: 20px;
+}
+.menu a{
+    text-decoration: none;
+    color: #959798;
+    font-size: 24pt;
+}
