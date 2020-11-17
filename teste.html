@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html>  
+  
+<head> 
+    <title> 
+        HTML DOM Input Password pattern Property 
+    </title> 
+</head> 
+  
+<body style="text-align:center;">  
+  
+    <h1 style="color:green;">  
+            GeeksForGeeks  
+        </h1>  
+  
+    <h2>DOM Input Password pattern Property</h2>  
+      
+    <form id="myGeeks"> 
+        Password: <input type="password" id="myPsw" name="Geeks"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" > 
+    </form> 
+      
+    <br><br> 
+      
+    <button onclick="myFunction()">  
+        Click Here!  
+    </button>  
+  
+    <p id="demo" style="color:green;font-size:25px;"></p>  
+      
+    <!-- Script to use Input Password pattern Property -->
+    <script>  
+        function myFunction() {  
+            var x =  
+            document.getElementById(  
+            "myPsw").pattern; 
+              
+            document.getElementById(  
+            "demo").innerHTML = x; 
+        }  
+    </script>  
+</body>  
+  
+</html> 
