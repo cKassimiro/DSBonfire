@@ -1,0 +1,14 @@
+
+/* ÍNICIO BARRA DE ROLAGEM */
+::-webkit-scrollbar-track {
+    background-color: #00000000;
+}
+::-webkit-scrollbar-thumb {
+    background: #865d02a6;
+}
+::-webkit-scrollbar {
+    width: 6px; 
+    background: #865d02a6;
+    border-radius: 100%;
+}
+/* FIM BARRA DE ROLAGEM */
