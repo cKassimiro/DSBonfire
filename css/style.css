@@ -68,6 +68,10 @@ body{
     height: 98vh;
     margin-right: 1%;
     z-index: 3;
+    border-top: ridge #1b191aed 2px;
+    border-left: ridge #1b191aed 2px;
+    border-bottom: ridge #1b191aed 2px;
+    border-right: ridge #1b191aed 2px;
 }
 .general-menu.menu{
     display: flex;
@@ -93,6 +97,19 @@ body{
     text-decoration: none;
     color: #959798;
     font-size: 14pt;
+}
+
+.disabled{
+    text-decoration: none;
+    color: #959798;
+    font-size: 14pt;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* CORPO DE INFORMAÇÕES */
@@ -140,9 +157,13 @@ body{
 .animacao:hover{
     animation: fadeinout 1s linear forwards;
     -webkit-animation: fadeinout 1s linear forwards;
-    background-color: #6f3c1d0e; 
     color: #a9927f;
     border-radius: 20%;
+}
+
+.animacao_cad:hover{
+    animation: fadeinout 1s linear forwards;
+    -webkit-animation: fadeinout 1s linear forwards;
 }
 
 /* ESCONDENDO BARRA DE ROLAGEM */
