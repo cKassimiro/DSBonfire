@@ -1,5 +1,8 @@
 /* GLOBAL */
+
+
 /* FONTE */
+
 @font-face {
     font-family: trajan-pro-3;
     src: url("../fonts/trajan-pro-3-2.otf") format("opentype");
@@ -11,12 +14,14 @@
     src: url("../fonts/trajan-pro-3-2.otf") format("opentype");
 }
 
+
 /* BACKGROUND */
-body{
+
+body {
     display: flex;
     flex-direction: row;
     background-image: url("../images/background_bonfire.jpg");
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     background-size: cover;
@@ -26,24 +31,27 @@ body{
     z-index: 1;
 }
 
-.filtro{
+.filtro {
     position: fixed;
     background-image: url("../images/grid.png");
     height: 100%;
     width: 100%;
     z-index: 2;
 }
-.atual{
+
+.atual {
     background-color: #e49b6013;
     display: block;
 }
 
-a{
+a {
     text-decoration: none;
     color: #a9927f;
 }
 
+
 /* MENU DE NAVEGAÇÃO */
+
 .titulo-dark-souls {
     color: antiquewhite;
     text-align: center;
@@ -54,7 +62,8 @@ a{
     font-size: 28pt;
     border-bottom: moccasin 1px solid;
 }
-.container-titulo{
+
+.container-titulo {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -64,6 +73,7 @@ a{
     color: antiquewhite;
     height: 0vh;
 }
+
 .general-menu {
     display: flex;
     justify-content: center;
@@ -79,33 +89,36 @@ a{
     border-bottom: ridge #1b191aed 2px;
     border-right: ridge #1b191aed 2px;
 }
-.general-menu.menu{
+
+.general-menu.menu {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     z-index: 4;
 }
-.menu{
+
+.menu {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: initial;
     width: 27vw;
 }
-.menu li{
+
+.menu li {
     list-style: none;
-    /* border-bottom: 1px #818181 solid; */
     text-align: center;
     padding-top: 20px;
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
     color: #959798;
     font-size: 14pt;
 }
 
-.disabled{
+.disabled {
     text-decoration: none;
     color: #959798;
     font-size: 14pt;
@@ -118,19 +131,23 @@ a{
     user-select: none;
 }
 
+
 /* CORPO DE INFORMAÇÕES */
-.general-corpo{
+
+.general-corpo {
     background-color: #1b191aed;
     z-index: 3;
 }
-.corpo-texto{    
+
+.corpo-texto {
     color: antiquewhite;
     text-align: justify;
     z-index: 4;
     margin: 53px;
     margin-top: 1px;
 }
-.frame{
+
+.frame {
     overflow: auto;
     border-radius: 0.7%;
     scroll-behavior: smooth;
@@ -139,14 +156,15 @@ a{
     margin-top: -8.2px;
 }
 
-.mini_bonfire{
+.mini_bonfire {
     width: 4vw;
     height: 4vh;
 }
 
+
 /* INICIO RODAPÉ DE LOGIN  */
 
-.general-rodape{
+.general-rodape {
     text-decoration: none;
     display: flex;
     justify-content: flex-end;
@@ -154,39 +172,62 @@ a{
     margin-bottom: 25px;
 }
 
-.general-rodape a{
+.general-rodape a {
     text-decoration: none;
     color: #959798;
 }
 
-.general-rodape li{
+.general-rodape li {
     list-style: none;
     font-size: 18pt;
 }
 
+
 /* ANIMAÇÃO DOS BOTOES */
-@-webkit-keyframes fadeinout {0%,100% { opacity: 0; }100% { opacity: 1; }}
-@keyframes fadeinout {0%,100% { opacity: 0; }100% { opacity: 1; }}
-.animacao:hover{
+
+@-webkit-keyframes fadeinout {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinout {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animacao:hover {
     animation: fadeinout 1s linear forwards;
     -webkit-animation: fadeinout 1s linear forwards;
     color: #a9927f;
     border-radius: 20%;
 }
 
-.animacao_cad:hover{
+.animacao_cad:hover {
     animation: fadeinout 1s linear forwards;
     -webkit-animation: fadeinout 1s linear forwards;
 }
 
+
 /* ESCONDENDO BARRA DE ROLAGEM */
+
 ::-webkit-scrollbar {
-    width: 0px; 
+    width: 0px;
 }
+
 
 /* ESTILIZAÇÃO DA PAGINA galeria_frame.html */
 
-.galeria_imagem{
+.galeria_imagem {
     width: 100vw;
 }
 
@@ -211,14 +252,25 @@ a{
     text-align: center;
 }
 
-.general-corpo-galeria{
+.general-corpo-galeria {
     background-color: #1b191aed;
     z-index: 3;
     color: whitesmoke;
 }
 
-.espaco{
+.espaco {
     display: flex;
     flex-flow: wrap;
     place-content: space-between;
+}
+
+tbody{
+    color: rgb(255, 255, 255);
+    font-size: 10pt;
+}
+
+td{
+    border: 1px solid #ccc;
+    text-align: center;
+    border: collapse;
 }

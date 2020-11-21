@@ -1,5 +1,28 @@
 /* GLOBAL */
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 18pt;
+}
+
+input {
+    background-color: rgba(224, 205, 181, 0.192);
+    border-radius: 5px;
+    color: ivory;
+    font-size: 12pt
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/* GLOBAL */
+
+
 /* FONTE */
+
 @font-face {
     font-family: trajan-pro-3;
     src: url("../fonts/trajan-pro-3-2.otf") format("opentype");
@@ -10,24 +33,14 @@
     font-weight: bolder;
     src: url("../fonts/trajan-pro-3-2.otf") format("opentype");
 }
-a{
-    text-decoration: none;
-    color: antiquewhite;
-    font-size: 18pt;
-}
 
-input{
-    background-color: rgba(224, 205, 181, 0.192);
-    border-radius: 5px;
-    color: ivory;
-    font-size: 12pt
-}
 
-::-webkit-scrollbar {
-    width: 0px; 
-}
+/* FONTE */
+
+
 /* BACKGROUND */
-body{
+
+body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -38,7 +51,8 @@ body{
     margin: 16px 0px;
     overflow: hidden;
 }
-.filtro{
+
+.filtro {
     position: fixed;
     background-image: url("../images/grid.png");
     height: 100%;
@@ -47,10 +61,10 @@ body{
     opacity: 35%;
 }
 
-.background_login{
+.background_login {
     position: absolute;
     background-image: url("../images/background_login_cadastro.jpg");
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 100vw;
@@ -63,12 +77,16 @@ body{
     background: rgb(0 0 0 / 7%);
     backdrop-filter: blur(1px);
     height: 100vh;
-      width: 100%;
-  }
+    width: 100%;
+}
+
+
+/* BACKGROUND */
+
 
 /* CORPO */
 
-.general_login_cadastro{
+.general_login_cadastro {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -76,6 +94,7 @@ body{
     color: antiquewhite;
     margin-left: 24px;
 }
+
 .login {
     display: flex;
     justify-content: center;
@@ -83,8 +102,8 @@ body{
     flex-direction: unset;
     background-color: #1b191aed;
     width: 30vw;
-    height: 95vh;   
-     margin-right: 1%;
+    height: 95vh;
+    margin-right: 1%;
     z-index: 3;
     border-top: ridge #1b191aed 2px;
     border-left: ridge #1b191aed 2px;
@@ -92,7 +111,7 @@ body{
     border-right: ridge #1b191aed 2px;
 }
 
-.itens_cadastro_login{
+.itens_cadastro_login {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -101,7 +120,7 @@ body{
     margin-top: 114px;
 }
 
-.login h1{
+.login h1 {
     display: flex;
     align-items: center;
     text-align: center;
@@ -109,36 +128,35 @@ body{
     margin-top: 29px;
 }
 
-.campo{
+.campo {
     display: flex;
     flex-direction: column;
 }
 
-.campo input{
+.campo input {
     margin-top: -20px;
-    
 }
 
-.login input{
+.login input {
     width: 18vw;
     height: 3vh;
 }
 
-.entrar{
+.entrar {
     margin-top: 31px;
 }
 
-.cadastrar-se{
+.cadastrar-se {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     margin-bottom: 25px;
     margin-top: 20vh;
-    align-items: center;;
+    align-items: center;
+    ;
 }
 
-
-.itens_cadastro{
+.itens_cadastro {
     display: flex;
     justify-content: center;
     flex-direction: column;

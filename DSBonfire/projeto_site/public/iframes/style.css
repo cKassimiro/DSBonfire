@@ -1,4 +1,3 @@
-/* ---- reset ---- */
 body {
     margin: 0;
 }
@@ -7,7 +6,9 @@ canvas {
     display: block;
 }
 
+
 /* ---- particles.js container ---- */
+
 #particles-js {
     position: absolute;
     width: 100%;
