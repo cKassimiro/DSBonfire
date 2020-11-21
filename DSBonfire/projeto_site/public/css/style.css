@@ -25,6 +25,7 @@ body{
     font-weight: 200;
     z-index: 1;
 }
+
 .filtro{
     position: fixed;
     background-image: url("../images/grid.png");
@@ -35,6 +36,11 @@ body{
 .atual{
     background-color: #e49b6013;
     display: block;
+}
+
+a{
+    text-decoration: none;
+    color: #a9927f;
 }
 
 /* MENU DE NAVEGAÇÃO */
@@ -119,8 +125,10 @@ body{
 }
 .corpo-texto{    
     color: antiquewhite;
-    text-align: center;
+    text-align: justify;
     z-index: 4;
+    margin: 53px;
+    margin-top: 1px;
 }
 .frame{
     overflow: auto;
@@ -129,6 +137,11 @@ body{
     width: 73vw;
     z-index: 5;
     margin-top: -8.2px;
+}
+
+.mini_bonfire{
+    width: 4vw;
+    height: 4vh;
 }
 
 /* INICIO RODAPÉ DE LOGIN  */
@@ -169,4 +182,43 @@ body{
 /* ESCONDENDO BARRA DE ROLAGEM */
 ::-webkit-scrollbar {
     width: 0px; 
+}
+
+/* ESTILIZAÇÃO DA PAGINA galeria_frame.html */
+
+.galeria_imagem{
+    width: 100vw;
+}
+
+.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+.img:hover {
+    border: 1px solid #777;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.general-corpo-galeria{
+    background-color: #1b191aed;
+    z-index: 3;
+    color: whitesmoke;
+}
+
+.espaco{
+    display: flex;
+    flex-flow: wrap;
+    place-content: space-between;
 }
