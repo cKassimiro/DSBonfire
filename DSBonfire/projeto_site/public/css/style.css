@@ -274,3 +274,19 @@ td{
     text-align: center;
     border: collapse;
 }
+
+.img-personagem{
+    width: 70vw;
+    margin-left: 73px;
+}
+
+.sumario{    
+    display: inline;
+}
+
+.arrow{
+    position: fixed;
+    right: 2vw;
+    width: 6vw;
+    top: 92vh;
+}
