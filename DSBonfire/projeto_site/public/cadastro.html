@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login_cadastro.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/cadastrar.js"></script>
     <title>DSB - Register</title>
 </head>
 
@@ -23,22 +24,23 @@
                 <h1>BE PREPARE!</h1>
             </header>
 
-            <form action="/cadastrar" method="">
+            <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
                 <div class="itens_cadastro">
                     <article class="campo">
                         <h3>USER</h3>
-                        <input type="text">
+                        <input type="text" name="nome" class="input-padrao" autofocus="autofocus" placeholder="Nome completo"  required minlength="4">
                     </article>
                     <article class="campo">
-                        <h3>EMAIL</h3>
-                        <input type="text">
+                        <h3>LOGIN</h3>
+                        <input type="text" name="login" class="input-padrao" placeholder="Usuário para login"  required minlength="4">
                     </article>
                     <article class="campo">
                         <h3>PASSWORD</h3>
-                        <input type="password">
+                        <input type="password" name="senha" class="input-padrao" placeholder="**********"  required minlength="4">
                     </article>
                     <footer class="entrar animacao">
-                        <label><a href="">REGISTER</a></label>
+                        <label><button class="btn_entrar" id="btn_entrar">REGISTER</button></label>
+                        <div id="div_erro"></div>
                     </footer>
                 </div>
             </form>

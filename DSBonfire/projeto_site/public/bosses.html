@@ -6,11 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js/autenticar.js"></script>
     <title>DSB - Bosses</title>
 </head>
 
-<body>
+<script>
+
+    let usuario;
+
+    verificar_autenticacao();
+
+    
+</script>
+
+<body onload="verificar_autenticacao()">
     <div class="filtro" id="filtro"></div>
     <aside class="general-menu">
         <!-- INICIO DIV TITULO -->
@@ -37,7 +46,7 @@
         <!-- INICIO RODAPÉ DE LOGIN -->
         <div class="general-rodape">
             <footer class="rodape">
-                <li><a class="animacao" href="login.html">LOGIN</a></li>
+                <li><a class="animacao"><b id="b_usuario"></b></a></li>
             </footer>
         </div>
         <!-- FIM RODAPÉ DE LOGIN -->

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login_cadastro.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/logar.js"></script>
     <title>DSB - Login</title>
 </head>
 
@@ -23,18 +24,18 @@
                 <h1> _ WELCOME _ </h1>
             </header>
 
-            <form action="/logar" method="">
+            <form id="form_login" method="post" onsubmit="return entrar()">
                 <div class="itens_cadastro_login">
                     <article class="campo">
                         <h3>USER</h3>
-                        <input type="text">
+                        <input type="text" class="input-padrao" name="login">
                     </article>
                     <article class="campo">
                         <h3>PASSWORD</h3>
-                        <input type="password">
+                        <input type="password" class="input-padrao" name="senha">
                     </article>
                     <footer class="entrar animacao">
-                        <label><a href="">LOGIN</a></label>
+                        <label><button class="btn_entrar" id="btn_entrar">LOGIN</button></label>
                     </footer>
                 </div>
             </form>
