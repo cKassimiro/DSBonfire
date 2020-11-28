@@ -327,3 +327,13 @@ td{
     text-align: center;
     margin-bottom: 14px;
 }
+
+.z-index-set{
+    z-index: 3;
+}
+
+.seta-voltar{
+    z-index: 3;
+    width: 3vw;
+
+}
