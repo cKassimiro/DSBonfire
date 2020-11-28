@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <link rel="shortcut icon" href="images/curse_icon.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/autenticar.js"></script>
+    <script src="js/frames.js"></script>
     <title>DSB - Home</title>
 </head>
 
@@ -21,17 +21,19 @@
             <div class="container-titulo">
                 <h2 class="subtitulo-bonfire">
                     Bonfire
-                    </h1>
+                </h1>
             </div>
         </div>
         <!-- FIM DIV TITULO -->
         <!-- INICIO OPÇÕES DE MENU -->
         <nav class="menu">
-            <li><a class="atual animacao" href="index.html">HOME</a></li>
-            <li><a class="animacao" href="historia.html">LORE</a></li>
-            <li><a class="animacao" href="personagens.html">CHARACTERS</a></li>
-            <li><a class="animacao" href="galeria.html">GALLERY</a></li>
-            <li><a class="animacao" href="bosses.html">BOSSES</a></li>
+            <li><a id="inicio" class="animacao atual" onclick="change_frame('home')">HOME</a></li>
+            <li><a id="historia" class="animacao" onclick="change_frame('lore')">LORE</a></li>
+            <li><a id="personagens" class="animacao" onclick="change_frame('char')">CHARACTERS</a></li>
+            <li><a id="galeria" class="animacao" onclick="change_frame('gal')">GALLERY</a></li>
+            <li><a id="chefes" class="animacao" onclick="change_frame()">BOSSES</a></li>
+            <br>
+            <li><a class="animacao" style="color: gold;" href="https://maxatrillionator.itch.io/yarntown" target="_blank">YARNTOWN</a></li>
         </nav>
         <!-- FIM OPÇÕES DE MENU -->
         <!-- INICIO RODAPÉ DE LOGIN -->
@@ -43,7 +45,8 @@
         <!-- FIM RODAPÉ DE LOGIN -->
     </aside>
 
-    <iframe class="frame" src="iframes/index_frame.html" frameborder="0"></iframe>
+    <iframe id="frame_change" class="frame" src="iframes/index_frame.html" frameborder="0"></iframe>
+
     <audio autoplay>
         <source src="audio/ds2majula.mp3" type="audio/mp3">
     </audio>

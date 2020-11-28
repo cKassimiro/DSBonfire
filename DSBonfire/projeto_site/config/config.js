@@ -1,7 +1,7 @@
 module.exports = {
   production: {
-    username: '',
-    password: '',
+    username: 'adm',
+    password: '0v4T5Ug64!',
     database: 'dsbonfire-hollow-user',
     host: 'nig.database.windows.net',
     dialect: 'mssql',
