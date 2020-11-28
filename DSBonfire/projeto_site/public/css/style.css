@@ -314,3 +314,10 @@ td{
     font-size: 20pt;
     cursor: pointer;
 }
+
+.nome_usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
