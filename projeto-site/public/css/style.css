@@ -209,7 +209,7 @@ a {
 }
 
 .animacao:hover {
-    cursor: po;
+    cursor: pointer;
     animation: fadeinout 1s linear forwards;
     -webkit-animation: fadeinout 1s linear forwards;
     color: #a9927f;
