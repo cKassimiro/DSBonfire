@@ -116,6 +116,7 @@ a {
 }
 
 .menu a {
+    cursor: pointer;
     text-decoration: none;
     color: #959798;
     font-size: 14pt;
