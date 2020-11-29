@@ -34,6 +34,10 @@ body {
     z-index: 1;
 }
 
+p{
+    color: white;
+}
+
 .filtro {
     position: fixed;
     background-image: url("../images/grid.png");
