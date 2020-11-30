@@ -67,7 +67,7 @@ a {
     -webkit-text-stroke-color: #0000005e;
     z-index: 4;
     font-size: 28pt;
-    border-bottom: moccasin 1px solid;
+    border-bottom: #a9927f 1px solid;
 }
 
 .container-titulo {
@@ -77,7 +77,7 @@ a {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #0000005e;
     align-items: center;
-    color: antiquewhite;
+    color: #a9927f;
     height: 0vh;
 }
 
@@ -123,7 +123,7 @@ a {
     cursor: pointer;
     text-decoration: none;
     color: #959798;
-    font-size: 12pt;
+    font-size: 13pt;
     flex-direction: column;
     display: flex;
     height: 4vh;
@@ -186,6 +186,8 @@ a {
 .general-rodape a {
     text-decoration: none;
     color: #959798;
+    border-bottom: gold 1px solid;
+    border-radius: 24px;
 }
 
 .general-rodape li {
@@ -312,6 +314,8 @@ td{
     font-weight: 200;
     font-size: 20pt;
     cursor: pointer;
+    border-bottom: gold 1px solid;
+    border-radius: 24px;
 }
 
 .btn_cadastrar{
@@ -324,6 +328,8 @@ td{
     font-weight: 200;
     font-size: 20pt;
     cursor: pointer;
+    border-bottom: gold 1px solid;
+    border-radius: 24px;
 }
 
 .nome_usuario{
