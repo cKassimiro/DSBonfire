@@ -87,7 +87,7 @@ a {
     flex-flow: wrap;
     flex-direction: unset;
     background-color: #1b191aed;
-    width: 30vw;
+    width: 24vw;    
     height: 98vh;
     margin-right: 1%;
     z-index: 3;
@@ -152,7 +152,7 @@ a {
 
 .corpo-texto {
     color: antiquewhite;
-    text-align: justify;
+    text-align: left;
     z-index: 4;
     margin: 53px;
     margin-top: 1px;
